@@ -1,9 +1,3 @@
-##Om Namah Shivay
-##Om Sai Ram
-####Om Ganapati Bappa Moriya
-#############################################################################
-#############################################################################
-#############################################################################
 
 ##Fetching all Necessary Library
 
@@ -230,10 +224,10 @@ mae_train<-mean(abs(errors_train))
 
 mae_test<-mean(abs(errors_test))
 
-(434077.3-413182.5)/413182.5
-(437733-426664.6)/426664.6
 
+###Checking the mae_test result
 (386700.7-380726)/380726
+
 ####Creating model on the entire Train data set
 
 fit.final<-lm(Price~Rooms + Distance + Bedroom2 + Bathroom + Car + Landsize + 
@@ -276,6 +270,3 @@ test.pred<-predict(fit.final,newdata = test)
 write.csv(test.pred,"Saibal_Chakraborty_P1_Part2(2).csv",row.names= FALSE)
 
 
-212467/434077.3
-
-212467/437733
